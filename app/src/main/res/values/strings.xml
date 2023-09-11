@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Circket T20 Live</string>
+
+    <string name="live_Match_key">9de8cb2c-8f47-4a7f-a8bb-0a204495eccb</string>
+
+
+    <string name="adUnit_id">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="app_id_admob">ca-app-pub-3940256099942544~3347511713</string>
+    <string name="interstitial_Ad_id">ca-app-pub-3940256099942544/1033173712</string>
+
+
+
+    <string name="check_matches_schedule">Check matches schedule</string>
+    <string name="icc_champion_trophy">ICC Champion Trophy</string>
+    <string name="_30_3">(30.3)</string>
+    <string name="_170_6">170/6</string>
+    <string name="_50">(50)</string>
+    <string name="_280_6">280/6</string>
+    <string name="vs">VS</string>
+    <string name="india">India</string>
+    <string name="australia">Australia</string>
+    <string name="live">Live</string>
+    <string name="live_match">Live Match</string>
+    <string name="match_date">Match Date</string>
+
+</resources>

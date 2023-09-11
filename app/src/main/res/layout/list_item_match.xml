@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_8sdp"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_110sdp"
+        app:cardCornerRadius="@dimen/_8sdp"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/Country_Flag"
+                android:layout_width="@dimen/_42sdp"
+                android:layout_height="@dimen/_42sdp"
+                android:layout_marginStart="@dimen/_16sdp"
+                android:src="@drawable/australia_flag"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/matchDateTextViewsae" />
+
+            <TextView
+                android:id="@+id/countryName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_3sdp"
+                android:text="@string/australia"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:textAllCaps="false"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/_12ssp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/Country_Flag"
+                app:layout_constraintStart_toStartOf="@+id/Country_Flag"
+                app:layout_constraintTop_toBottomOf="@+id/Country_Flag"
+                tools:ignore="RtlSymmetry" />
+
+            <TextView
+                android:id="@+id/VS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:background="@drawable/vs_bg"
+                android:paddingStart="@dimen/_8sdp"
+                android:paddingTop="@dimen/_2sdp"
+                android:paddingEnd="@dimen/_8sdp"
+                android:paddingBottom="@dimen/_2sdp"
+                android:text="@string/vs"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/_11sdp"
+                app:layout_constraintBottom_toBottomOf="@+id/Country_Flag"
+                app:layout_constraintEnd_toStartOf="@+id/Country_Flag2"
+                app:layout_constraintStart_toEndOf="@+id/Country_Flag"
+                app:layout_constraintTop_toTopOf="@+id/Country_Flag" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/Country_Flag2"
+                android:layout_width="@dimen/_42sdp"
+                android:layout_height="@dimen/_42sdp"
+                android:layout_marginEnd="@dimen/_18sdp"
+                android:src="@drawable/img"
+                app:layout_constraintBottom_toBottomOf="@+id/Country_Flag"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/Country_Flag" />
+
+            <TextView
+                android:id="@+id/countryName2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_3sdp"
+                android:text="@string/india"
+                android:textAllCaps="false"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/_12ssp"
+                android:textStyle="bold"
+                android:layout_marginEnd="@dimen/_4sdp"
+                app:layout_constraintEnd_toEndOf="@+id/Country_Flag2"
+                app:layout_constraintStart_toStartOf="@+id/Country_Flag2"
+                app:layout_constraintTop_toBottomOf="@+id/Country_Flag2"
+                tools:ignore="RtlSymmetry" />
+
+
+            <TextView
+                android:id="@+id/matchDateTextViewsae"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/match_date"
+                android:padding="@dimen/_4sdp"
+                android:textAlignment="center"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/_14ssp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:layout_width="@dimen/_12sdp"
+                android:layout_height="1dp"
+                android:background="@color/secondary_color"
+                android:layout_marginEnd="@dimen/_2sdp"
+                app:layout_constraintBottom_toBottomOf="@+id/VS"
+                app:layout_constraintEnd_toStartOf="@+id/VS"
+                app:layout_constraintTop_toTopOf="@+id/VS" />
+
+            <View
+                android:layout_width="@dimen/_12sdp"
+                android:layout_height="@dimen/_1sdp"
+                android:background="@color/secondary_color"
+                android:layout_marginStart="@dimen/_2sdp"
+                app:layout_constraintBottom_toBottomOf="@+id/VS"
+                app:layout_constraintStart_toEndOf="@+id/VS"
+                app:layout_constraintTop_toTopOf="@+id/VS" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Add more TextViews for other match details as needed -->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

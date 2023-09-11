@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "131902530654",
+    "project_id": "circket-t20-live",
+    "storage_bucket": "circket-t20-live.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:131902530654:android:75e333c9989316c77cc0cf",
+        "android_client_info": {
+          "package_name": "com.example.circkett20live"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDZty90rAGJxTS_m8DGRcdTvCl50JmP_kI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

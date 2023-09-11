@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_200sdp"
+        android:layout_marginTop="@dimen/_18sdp"
+        android:layout_marginStart="@dimen/_12sdp"
+        android:layout_marginEnd="@dimen/_12sdp"
+        app:cardCornerRadius="@dimen/_8sdp"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textViewcurrentSituation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:padding="@dimen/_3sdp"
+                android:text="@string/live_match"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/_12ssp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/live_background"
+                android:drawablePadding="@dimen/_6sdp"
+                android:padding="@dimen/_3sdp"
+                android:text="@string/live"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/_12ssp"
+                android:textStyle="bold"
+                app:drawableStartCompat="@drawable/live"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/Country_Flag"
+                android:layout_width="@dimen/_43sdp"
+                android:layout_height="@dimen/_43sdp"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:src="@drawable/australia_flag"
+                app:layout_constraintEnd_toEndOf="@+id/textViewcurrentSituation"
+                app:layout_constraintStart_toStartOf="@+id/textViewcurrentSituation"
+                app:layout_constraintTop_toBottomOf="@+id/textViewcurrentSituation" />
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/Country_Flag2"
+                android:layout_width="@dimen/_43sdp"
+                android:layout_height="@dimen/_43sdp"
+                android:layout_marginEnd="@dimen/_18sdp"
+                android:src="@drawable/img"
+                app:layout_constraintBottom_toBottomOf="@+id/Country_Flag"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/status"
+                app:layout_constraintTop_toTopOf="@+id/Country_Flag" />
+
+
+            <TextView
+                android:id="@+id/Country_Name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:padding="@dimen/_3sdp"
+                android:text="@string/australia"
+                android:textAllCaps="true"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/_11ssp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/Country_Flag"
+                app:layout_constraintStart_toStartOf="@+id/Country_Flag"
+                app:layout_constraintTop_toBottomOf="@+id/Country_Flag" />
+
+
+            <TextView
+                android:id="@+id/Country_Name2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:padding="@dimen/_3sdp"
+                android:text="@string/india"
+                android:textAllCaps="true"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/_11ssp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/Country_Flag2"
+                app:layout_constraintStart_toStartOf="@+id/Country_Flag2"
+                app:layout_constraintTop_toBottomOf="@+id/Country_Flag2" />
+
+
+            <TextView
+                android:id="@+id/VS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:background="@drawable/vs_bg"
+                android:paddingStart="@dimen/_8sdp"
+                android:paddingTop="@dimen/_2sdp"
+                android:paddingEnd="@dimen/_8sdp"
+                android:paddingBottom="@dimen/_2sdp"
+                android:text="@string/vs"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/_11sdp"
+                app:layout_constraintBottom_toBottomOf="@+id/Country_Flag"
+                app:layout_constraintEnd_toStartOf="@+id/Country_Flag2"
+                app:layout_constraintStart_toEndOf="@+id/Country_Flag"
+                app:layout_constraintTop_toTopOf="@+id/Country_Flag"
+                tools:ignore="TextSizeCheck" />
+
+            <TextView
+                android:id="@+id/Score_Out"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:paddingEnd="@dimen/_2sdp"
+                android:text="000/0"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/_11ssp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Country_Name"
+                tools:ignore="RtlSymmetry" />
+
+
+            <TextView
+                android:id="@+id/Overs_Balls"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/_1sdp"
+                android:text="@string/_50"
+                android:textColor="@color/secondary_color"
+                android:textSize="@dimen/_10ssp"
+                app:layout_constraintBottom_toBottomOf="@+id/Score_Out"
+                app:layout_constraintStart_toEndOf="@+id/Score_Out"
+                app:layout_constraintTop_toTopOf="@+id/Score_Out"
+                tools:ignore="RtlSymmetry" />
+
+
+            <TextView
+                android:id="@+id/Score_Out2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="000/0"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/_11ssp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/Overs_Balls2"
+                app:layout_constraintEnd_toStartOf="@+id/Overs_Balls2"
+                app:layout_constraintTop_toBottomOf="@+id/Country_Name2"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/Overs_Balls2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/_2sdp"
+                android:text="(50)"
+                android:textColor="@color/secondary_color"
+                android:textSize="@dimen/_10ssp"
+                app:layout_constraintEnd_toEndOf="@+id/Country_Flag2"
+                app:layout_constraintTop_toBottomOf="@+id/Country_Name2"
+                tools:ignore="RtlSymmetry" />
+
+
+            <TextView
+                android:id="@+id/textViewmatchType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/card_bg"
+                android:paddingStart="@dimen/_12sdp"
+                android:paddingTop="@dimen/_6sdp"
+                android:paddingEnd="@dimen/_12sdp"
+                android:minWidth="@dimen/_135sdp"
+                android:paddingBottom="@dimen/_6sdp"
+                android:text="@string/icc_champion_trophy"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:gravity="center_horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <TextView
+        android:id="@+id/check_matches_textView"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_48sdp"
+        android:text="@string/check_matches_schedule"
+        android:layout_marginTop="@dimen/_18sdp"
+        android:textColor="@color/textColor"
+        android:gravity="center"
+        android:textSize="@dimen/_14ssp"
+        android:layout_marginStart="@dimen/_3sdp"
+        android:layout_marginEnd="@dimen/_3sdp"
+        android:textStyle="bold"
+        android:paddingEnd="@dimen/_12sdp"
+        android:background="@drawable/text_view_bg"
+        app:layout_constraintEnd_toEndOf="@+id/cardView"
+        app:layout_constraintStart_toStartOf="@+id/cardView"
+        app:layout_constraintTop_toBottomOf="@+id/cardView"
+        app:drawableEndCompat="@drawable/next"
+        tools:ignore="RtlSymmetry" />
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_100sdp"
+        android:layout_marginStart="@dimen/_12sdp"
+        android:layout_marginEnd="@dimen/_12sdp"
+        android:layout_marginBottom="@dimen/_16sdp"
+        android:background="@drawable/text_view_bg"
+        android:padding="@dimen/_8sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="@dimen/_28sdp"
+            android:layout_height="@dimen/_28sdp"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/background_color"
+            android:padding="@dimen/_2sdp"/>
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:adSize="LARGE_BANNER"
+            android:visibility="gone"
+            app:adUnitId="@string/adUnit_id" />
+
+
+    </FrameLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
